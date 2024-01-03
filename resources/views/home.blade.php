@@ -46,12 +46,12 @@
 
     <!--    *Section between the carousels start    -->
     <section class="vw-100 pt-5 px-5">
-        <h2 class="darkest-brown w-50">Encontramos residências em todos os cantos de Angola!</h2>
+        <h2 class="darkest-brown w-50 w-100-md">Encontramos residências em todos os cantos de Angola!</h2>
     </section>
     <!--    *End of section between the carousels    -->
 
     <!--    *Carousel-2 start   -->
-    <div id="carouselExampleIndicators-1" class="carousel slide vw-100">
+    <div id="carouselExampleIndicators-1" class="carousel d-none d-md-block slide vw-100">
         <div class="carousel-indicators special-positioning
         position-absolute">
             <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -61,39 +61,39 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
             <img src="../img/linear-gradient.png" class="d-block vw-100" alt="Advertising-4">
-            <div class="carousel-caption d-none d-md-block mt-5 position-absolute start-0 text-start top-0 px-5 w-100">
+            <div class="carousel-caption mt-5 position-absolute start-0 text-start top-0 px-5 w-100">
                 <div class="align-items-center d-flex mt-5 justify-content-around w-100">
                     <div class="w-50">
                         <img src="../img/img-2.png" alt="Young people living together" class="w-75">
                     </div>
                     <div class="w-50">
-                        <h2 class="darkest-brown fs-1 fw-bolder w-75">Precisa de casa para um convívio entre kambas?</h2>
+                        <h2 class="darkest-brown fs-1 fs-special fw-bolder w-75">Precisa de casa para um convívio entre kambas?</h2>
                     </div>
                 </div>
             </div>
             </div>
             <div class="carousel-item">
             <img src="../img/linear-gradient.png" class="d-block vw-100" alt="Advertising-5">
-            <div class="carousel-caption d-none d-md-block mt-5 position-absolute start-0 text-start top-0 px-5 w-100">
+            <div class="carousel-caption mt-5 position-absolute start-0 text-start top-0 px-5 w-100">
                 <div class="align-items-center d-flex mt-5 justify-content-around w-100">
                     <div class="w-50">
                         <img src="../img/img-2.png" alt="Young people living together" class="w-75">
                     </div>
                     <div class="w-50">
-                        <h2 class="darkest-brown fs-1 fw-bolder w-75">Encontre aqui a solução para os seus problemas...</h2>
+                        <h2 class="darkest-brown fs-1 fs-special fw-bolder w-75">Encontre aqui a solução para os seus problemas...</h2>
                     </div>
                 </div>
             </div>
             </div>
             <div class="carousel-item">
             <img src="../img/linear-gradient.png" class="d-block vw-100" alt="Advertising-6">
-            <div class="carousel-caption d-none d-md-block mt-5 position-absolute start-0 text-start top-0 px-5 w-100">
+            <div class="carousel-caption mt-5 position-absolute start-0 text-start top-0 px-5 w-100">
                 <div class="align-items-center d-flex mt-5 justify-content-around w-100">
                     <div class="w-50">
                         <img src="../img/img-2.png" alt="Young people living together" class="w-75">
                     </div>
                     <div class="w-50">
-                        <h2 class="darkest-brown fs-1 fw-bolder w-75">Sinta-se em casa!</h2>
+                        <h2 class="darkest-brown fs-1 fs-special fw-bolder w-75">Sinta-se em casa!</h2>
                     </div>
                 </div>
             </div>
@@ -113,96 +113,173 @@
             <div id="carouselExampleHouses" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <div class="cards-wrapper">
-                        <!--    *Card-1 start    -->
-                        <div class="card special-card" style="width: 18rem;">
-                            <img src="../img/sample-house.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <div>
-                                <h3 class="card-title color-darkest-orange">120.000,000.000.000 kz</h3>
-                                <p class="color-darkest-orange">3 x Parcelado</p>
+                        <div class="cards-wrapper">
+                            <!--    *Card-1 start    -->
+                            <div class="card special-card" style="width: 14rem;">
+                                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <div>
+                                    <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                                    <p class="color-darkest-orange">3 x Parcelado</p>
+                                </div>
+                                <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                </div>
                             </div>
-                            <h5 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h5>
-                            <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
+                            <!--    *End of card-1    -->
+                            <!--    *Card-2 start    -->
+                            <div class="card d-none d-sm-block special-card" style="width: 14rem;">
+                                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <div>
+                                    <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                                    <p class="color-darkest-orange">3 x Parcelado</p>
+                                </div>
+                                <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                </div>
                             </div>
+                            <!--    *End of card-2    -->
+                            <!--    *Card-3 start    -->
+                            <div class="card d-none d-md-block special-card" style="width: 14rem;">
+                                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <div>
+                                    <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                                    <p class="color-darkest-orange">3 x Parcelado</p>
+                                </div>
+                                <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                </div>
+                            </div>
+                            <!--    *End of card-3    -->
+                            <!--    *Card-4 start    -->
+                            <div class="card d-none d-lg-block special-card" style="width: 14rem;">
+                                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <div>
+                                    <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                                    <p class="color-darkest-orange">3 x Parcelado</p>
+                                </div>
+                                <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                </div>
+                            </div>
+                            <!--    *End of card-4    -->
                         </div>
-                        <!--    *End of card-1    -->
-                        <!--    *Card-1 start    -->
-                        <div class="card d-none d-md-block special-card" style="width: 18rem;">
-                            <img src="../img/sample-house.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <div>
-                                <h3 class="card-title color-darkest-orange">120.000,000.000.000 kz</h3>
-                                <p class="color-darkest-orange">3 x Parcelado</p>
-                            </div>
-                            <h5 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h5>
-                            <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
-                            </div>
-                        </div>
-                        <!--    *End of card-1    -->
-                    </div>
                     </div>
                     <div class="carousel-item">
-                    <div class="cards-wrapper">
-                        <!--    *Card-1 start    -->
-                        <div class="card special-card" style="width: 18rem;">
-                            <img src="../img/sample-house.png" class="card-img-top" alt="...">
-                            <div class="card-body">
+                        <div class="cards-wrapper">
+                            <!--    *Card-1 start    -->
+                            <div class="card special-card" style="width: 14rem;">
+                                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                                <div class="card-body">
                                 <div>
-                                <h3 class="card-title color-darkest-orange">120.000,000.000.000 kz</h3>
-                                <p class="color-darkest-orange">3 x Parcelado</p>
+                                    <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                                    <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
-                                <h5 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h5>
-                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
+                                <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                </div>
                             </div>
-                        </div>
-                        <!--    *End of card-1    -->
-                        <!--    *Card-1 start    -->
-                        <div class="card d-none d-md-block special-card" style="width: 18rem;">
-                            <img src="../img/sample-house.png" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <!--    *End of card-1    -->
+                            <!--    *Card-2 start    -->
+                            <div class="card d-none d-sm-block special-card" style="width: 14rem;">
+                                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                                <div class="card-body">
                                 <div>
-                                <h3 class="card-title color-darkest-orange">120.000,000.000.000 kz</h3>
-                                <p class="color-darkest-orange">3 x Parcelado</p>
+                                    <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                                    <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
-                                <h5 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h5>
-                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
+                                <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                </div>
                             </div>
+                            <!--    *End of card-2    -->
+                            <!--    *Card-3 start    -->
+                            <div class="card d-none d-md-block special-card" style="width: 14rem;">
+                                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <div>
+                                    <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                                    <p class="color-darkest-orange">3 x Parcelado</p>
+                                </div>
+                                <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                </div>
+                            </div>
+                            <!--    *End of card-3    -->
+                            <!--    *Card-4 start    -->
+                            <div class="card d-none d-lg-block special-card" style="width: 14rem;">
+                                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <div>
+                                    <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                                    <p class="color-darkest-orange">3 x Parcelado</p>
+                                </div>
+                                <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                </div>
+                            </div>
+                            <!--    *End of card-4    -->
                         </div>
-                        <!--    *End of card-1    -->
-                    </div>
                     </div>
                     <div class="carousel-item">
-                    <div class="cards-wrapper">
-                        <!--    *Card-1 start    -->
-                        <div class="card special-card" style="width: 18rem;">
-                            <img src="../img/sample-house.png" class="card-img-top" alt="...">
-                            <div class="card-body">
+                        <div class="cards-wrapper">
+                            <!--    *Card-1 start    -->
+                            <div class="card special-card" style="width: 14rem;">
+                                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                                <div class="card-body">
                                 <div>
-                                <h3 class="card-title color-darkest-orange">120.000,000.000.000 kz</h3>
-                                <p class="color-darkest-orange">3 x Parcelado</p>
+                                    <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                                    <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
-                                <h5 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h5>
-                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
+                                <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                </div>
                             </div>
-                        </div>
-                        <!--    *End of card-1    -->
-                        <!--    *Card-1 start    -->
-                        <div class="card d-none d-md-block special-card" style="width: 18rem;">
-                            <img src="../img/sample-house.png" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <!--    *End of card-1    -->
+                            <!--    *Card-2 start    -->
+                            <div class="card d-none d-sm-block special-card" style="width: 14rem;">
+                                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                                <div class="card-body">
                                 <div>
-                                <h3 class="card-title color-darkest-orange">120.000,000.000.000 kz</h3>
-                                <p class="color-darkest-orange">3 x Parcelado</p>
+                                    <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                                    <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
-                                <h5 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h5>
-                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
+                                <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                </div>
                             </div>
+                            <!--    *End of card-2    -->
+                            <!--    *Card-3 start    -->
+                            <div class="card d-none d-md-block special-card" style="width: 14rem;">
+                                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <div>
+                                    <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                                    <p class="color-darkest-orange">3 x Parcelado</p>
+                                </div>
+                                <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                </div>
+                            </div>
+                            <!--    *End of card-3    -->
+                            <!--    *Card-4 start    -->
+                            <div class="card d-none d-lg-block special-card" style="width: 14rem;">
+                                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <div>
+                                    <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                                    <p class="color-darkest-orange">3 x Parcelado</p>
+                                </div>
+                                <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                </div>
+                            </div>
+                            <!--    *End of card-4    -->
                         </div>
-                        <!--    *End of card-1    -->
                     </div>
-                    </div>
-                </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleHouses" data-bs-slide="prev">
                     <span class="bg-transparent-orange carousel-control-prev-icon rounded-1" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -215,7 +292,7 @@
             <!--    *End of carousel-3  -->
         </div>
         <div class="d-flex my-5 justify-content-center" id="see-more-link-section">
-            <a class="btn btn-success btn-lg w-50" href="#">Ver mais casas <i class="bi bi-arrow-right-circle d-none d-md-inline"></i></a>
+            <a class="btn btn-success btn-sm w-50" href="#">Ver mais casas <i class="bi bi-arrow-right-circle d-none d-md-inline"></i></a>
         </div>
     </section>
     <!--    *End of recently posted section    -->

@@ -1,7 +1,7 @@
 <!--    *Footer start    -->
 <footer class="main-footer mt-5">
-        <div class="container-fluid h-100 w-100" id="img-main-footer">
-            <div class="d-flex align-items-center mt-5 h-100 row" id="div-1-footer">
+        <div class="container-fluid w-100" id="img-main-footer">
+            <div class="d-flex align-items-center mt-5 row" id="div-1-footer">
                 <div class="align-items-center col-md-6 d-flex flex-column mt-5" id="div-1-1-footer">
                     <img class="w-50" src="../img/footer-logo.png" alt="logo">
                     <p class="fs-4 text-white w-50">Encontre seu lar, seu espaço, seu lugar!</p>
