@@ -1,0 +1,135 @@
+/*  *Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+:root{
+    /*  *Font family */
+    --main-font: 'Saira', sans-serif;
+    --secondary-font: 'Saira Stencil One', sans-serif;
+
+    /*  *Colors */
+    --darkest-brown: #793B12;
+    --darkest-orange: #DE7F41;
+    --lighter-orange: #F1860F;
+    --transparent-orange: #FAD3A8;
+    --cream-color: #F0E3D2;
+    --the-blue-one: #001AFF;
+}
+
+body{
+    font-family: var(--main-font);
+}
+
+/*  *Colors    */
+.darkest-brown{
+    color: var(--darkest-brown);
+}
+
+.bg-darkest-brown{
+    background-color: var(--darkest-brown);
+}
+
+.color-darkest-orange{
+    color: var(--darkest-orange);
+}
+
+.color-transparent-orange{
+    color: var(--transparent-orange);
+}
+
+.bg-transparent-orange{
+    background-color: var(--transparent-orange);
+}
+
+.the-blue-one{
+    color: var(--the-blue-one);
+}
+
+/*  *Size   */
+.fs-7{
+    font-size: 4rem;
+}
+
+/*  *Main link   */
+.a-main-bg{
+    background-color: var(--darkest-orange);
+    text-decoration: none;
+}
+
+/*  *Main link like button  */
+.a-main-like-btn-bg{
+    background-color: var(--lighter-orange);
+    text-decoration: none;
+}
+
+.a-main-like-btn-bg:hover{
+    background-color: var(--lighter-orange);
+    text-decoration: none;
+}
+
+.a-main-like-btn-bg:active{
+    background-color: var(--lighter-orange) !important;
+    text-decoration: none !important;
+}
+
+/*  *Main button  */
+.main-btn-bg{
+    background-color: var(--lighter-orange);
+    text-decoration: none;
+}
+
+.main-btn-bg:hover{
+    background-color: var(--lighter-orange);
+    text-decoration: none;
+}
+
+.main-btn-bg:active{
+    background-color: var(--lighter-orange) !important;
+    text-decoration: none !important;
+}
+
+.cards-wrapper{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.special-card{
+    width: calc(100%/3) !important;
+}
+
+textarea{
+    resize: none;
+}
+
+.main-footer{
+    background: hsla(0, 0%, 100%, 1);
+
+    background: linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(24, 85%, 76%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(24, 85%, 76%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(24, 85%, 76%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#F6B68C", GradientType=1 );
+    height: 80vh;
+}
+
+#img-main-footer{
+    background-image: url('../img/buildings.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+a.darkest-brown:active, a.darkest-brown:hover{
+    color: var(--darkest-brown);
+}
+
+@media screen and (max-width: 992px) {
+    .special-card{
+        width: 80% !important;
+    }
+}

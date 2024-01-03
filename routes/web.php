@@ -18,5 +18,8 @@ use App\Http\Controllers\{
 */
 
 // Páginas sem login
-Route::get('/', [HomeController::class,'viewHome'])->name('home');
+/*Route::get('/', [HomeController::class,'viewHome'])->name('home');*/
 
+Route::get('/', function () {
+    return view('home');
+});
