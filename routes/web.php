@@ -23,3 +23,11 @@ use App\Http\Controllers\{
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/buy-rent', function () {
+    return view('buy-rent');
+});

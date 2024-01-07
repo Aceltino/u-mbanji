@@ -33,6 +33,10 @@ body{
     color: var(--darkest-orange);
 }
 
+.bg-darkest-orange{
+    background-color: var(--darkest-orange);
+}
+
 .color-transparent-orange{
     color: var(--transparent-orange);
 }
@@ -118,7 +122,7 @@ textarea{
     resize: none;
 }
 
-.main-footer{
+.main-footer, .bg-about-main-img{
     background: hsla(0, 0%, 100%, 1);
 
     background: linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(24, 85%, 76%, 1) 100%);
@@ -139,6 +143,24 @@ a.darkest-brown:active, a.darkest-brown:hover{
     color: var(--darkest-brown);
 }
 /**  ---------- x End of Main x ----------   */
+
+/**  ---------- x About x ----------   */
+.accordion-item{
+    background-color: var(--transparent-orange);
+}
+
+.accordion-button{
+    background-color: var(--darkest-orange);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white; 
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.1rem var(--lighter-orange); 
+}
+/**  ---------- x End of About x ----------   */
 
 /*  *LG    */
 @media screen and (max-width: 992px) {

@@ -1,4 +1,4 @@
-/**  ---------- x Main x ----------   */
+/**  ---------- x Home x ----------   */
 #header-logo-section{
     background-color: var(--darkest-brown);
 }
@@ -23,7 +23,17 @@ nav{
     bottom: 120px;
     left: 400px;
 }
-/**  ---------- x End of Main x ----------   */
+/**  ---------- x End of Home x ----------   */
+
+/**  ---------- x About x ----------   */
+#bg-image-section-about{
+    background-image: url('../img/buildings.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 500px;
+}
+/**  ---------- x End of About x ----------   */
 
 /*  *LG    */
 @media screen and (max-width: 992px) {
