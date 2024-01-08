@@ -33,12 +33,24 @@ body{
     color: var(--darkest-orange);
 }
 
+.bg-darkest-orange{
+    background-color: var(--darkest-orange);
+}
+
 .color-transparent-orange{
     color: var(--transparent-orange);
 }
 
 .bg-transparent-orange{
     background-color: var(--transparent-orange);
+}
+
+.color-cream{
+    color: var(--cream-color);
+}
+
+.bg-cream{
+    background-color: var(--cream-color);
 }
 
 .the-blue-one{
@@ -50,6 +62,11 @@ body{
     font-size: 4rem;
 }
 
+.h-4{
+    height: 4px;
+}
+
+/**  ---------- x Main x ----------   */
 /*  *Main link   */
 .a-main-bg{
     background-color: var(--darkest-orange);
@@ -90,21 +107,34 @@ body{
 
 .cards-wrapper{
     display: flex;
-    gap: 4rem;
+    gap: 1rem;
     justify-content: center;
     padding-left: 30px;
     padding-right: 30px;
 }
 
 .special-card{
-    width: calc(100%/3) !important;
+    width: calc(100%/5) !important;
+}
+
+.carousel-control-prev {
+    width: 10%;
+}
+
+.carousel-control-next{
+    width: 9%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 textarea{
     resize: none;
 }
 
-.main-footer{
+.main-footer, .bg-about-main-img{
     background: hsla(0, 0%, 100%, 1);
 
     background: linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(24, 85%, 76%, 1) 100%);
@@ -112,9 +142,6 @@ textarea{
     background: -moz-linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(24, 85%, 76%, 1) 100%);
 
     background: -webkit-linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(24, 85%, 76%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#F6B68C", GradientType=1 );
-    height: 80vh;
 }
 
 #img-main-footer{
@@ -127,9 +154,69 @@ textarea{
 a.darkest-brown:active, a.darkest-brown:hover{
     color: var(--darkest-brown);
 }
+/**  ---------- x End of Main x ----------   */
 
+/**  ---------- x About x ----------   */
+.accordion-item{
+    background-color: var(--transparent-orange);
+}
+
+.accordion-button{
+    background-color: var(--darkest-orange);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white; 
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.1rem var(--lighter-orange); 
+}
+/**  ---------- x End of About x ----------   */
+
+/*  *LG    */
 @media screen and (max-width: 992px) {
+    /**  ---------- x Main x ----------   */
     .special-card{
-        width: 80% !important;
+        width: 30% !important;
     }
+
+    .carousel-control-prev {
+        width: 8%;
+    }
+    
+    .carousel-control-next{
+        width: 6%;
+    }
+    /**  ---------- x End of Main x ----------   */
+}
+
+/*  *MD    */
+@media screen and (max-width: 768px) {
+    /**  ---------- x Main x ----------   */
+    .w-100-md{
+        width: 100% !important;
+    }
+
+    .special-card{
+        width: 40% !important;
+    }
+
+    .carousel-control-prev {
+        width: 14%;
+    }
+    
+    .carousel-control-next{
+        width: 10%;
+    }
+    /**  ---------- x End of Main x ----------   */
+}
+
+/*  *SM    */
+@media screen and (max-width: 576px) {
+    /**  ---------- x Main x ----------   */
+    .special-card{
+        width: 60% !important;
+    }
+    /**  ---------- x End of Main x ----------   */
 }

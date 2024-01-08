@@ -15,7 +15,7 @@
     <link href={{{URL::asset("css/config.css")}}} rel="stylesheet">
     <link href={{{URL::asset("css/main.css")}}} rel="stylesheet">
 </head>
-<body>
+<body class="vw-100 overflow-x-hidden">
 
     @include('layouts.header')
 

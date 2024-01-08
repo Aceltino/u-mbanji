@@ -1,3 +1,4 @@
+/**  ---------- x Home x ----------   */
 #header-logo-section{
     background-color: var(--darkest-brown);
 }
@@ -21,4 +22,50 @@ nav{
     position: absolute !important;
     bottom: 120px;
     left: 400px;
+}
+/**  ---------- x End of Home x ----------   */
+
+/**  ---------- x About x ----------   */
+#bg-image-section-about{
+    background-image: url('../img/buildings.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 500px;
+}
+/**  ---------- x End of About x ----------   */
+
+/*  *LG    */
+@media screen and (max-width: 992px) {
+    /**  ---------- x Main x ----------   */
+    .carousel-indicators [data-bs-target]{
+        background-color: var(--darkest-brown);
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .special-positioning{
+        position: absolute !important;
+        bottom: 40px;
+        left: 400px;
+    }
+
+    .fs-special{
+        font-size: 1.5rem !important;
+    }
+    /**  ---------- x End of Main x ----------   */
+}
+
+/*  *MD    */
+@media screen and (max-width: 768px) {
+    /**  ---------- x Main x ----------   */
+
+    /**  ---------- x End of Main x ----------   */
+}
+
+/*  *SM    */
+@media screen and (max-width: 576px) {
+    /**  ---------- x Main x ----------   */
+
+    /**  ---------- x End of Main x ----------   */
 }

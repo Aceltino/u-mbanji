@@ -23,3 +23,15 @@ use App\Http\Controllers\{
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/sobre', function () {
+    return view('about');
+});
+
+Route::get('/alugar-comprar', function () {
+    return view('buy-rent');
+});
+
+Route::get('/ver-mais', function () {
+    return view('see-more');
+});
