@@ -45,6 +45,14 @@ body{
     background-color: var(--transparent-orange);
 }
 
+.color-cream{
+    color: var(--cream-color);
+}
+
+.bg-cream{
+    background-color: var(--cream-color);
+}
+
 .the-blue-one{
     color: var(--the-blue-one);
 }
@@ -52,6 +60,10 @@ body{
 /*  *Size   */
 .fs-7{
     font-size: 4rem;
+}
+
+.h-4{
+    height: 4px;
 }
 
 /**  ---------- x Main x ----------   */

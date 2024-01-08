@@ -24,10 +24,14 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/about', function () {
+Route::get('/sobre', function () {
     return view('about');
 });
 
-Route::get('/buy-rent', function () {
+Route::get('/alugar-comprar', function () {
     return view('buy-rent');
+});
+
+Route::get('/ver-mais', function () {
+    return view('see-more');
 });

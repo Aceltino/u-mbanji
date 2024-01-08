@@ -71,5 +71,234 @@
         </div>
     </section>
     <!--    *End of search section   -->
+
+    <!--    *Samples section   -->
+    <section class="container">
+        <!--    *Row-1 start    -->
+        <div class="d-flex justify-content-evenly py-3 row">
+            <!--    *Card-1 start    -->
+            <div class="card p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-1    -->
+            <!--    *Card-2 start    -->
+            <div class="card d-none d-sm-block p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-2    -->
+            <!--    *Card-3 start    -->
+            <div class="card d-none d-md-block p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-3    -->
+            <!--    *Card-4 start    -->
+            <div class="card d-none d-lg-block p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-4    -->
+        </div>
+        <!--    *End of row-1    -->
+        <!--    *Row-2 start    -->
+        <div class="d-flex justify-content-evenly py-3 row">
+            <!--    *Card-1 start    -->
+            <div class="card p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-1    -->
+            <!--    *Card-2 start    -->
+            <div class="card d-none d-sm-block p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-2    -->
+            <!--    *Card-3 start    -->
+            <div class="card d-none d-md-block p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-3    -->
+            <!--    *Card-4 start    -->
+            <div class="card d-none d-lg-block p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-4    -->
+        </div>
+        <!--    *End of row-2    -->
+        <!--    *Row-3 start    -->
+        <div class="d-flex justify-content-evenly py-3 row">
+            <!--    *Card-1 start    -->
+            <div class="card p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-1    -->
+            <!--    *Card-2 start    -->
+            <div class="card d-none d-sm-block p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-2    -->
+            <!--    *Card-3 start    -->
+            <div class="card d-none d-md-block p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-3    -->
+            <!--    *Card-4 start    -->
+            <div class="card d-none d-lg-block p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-4    -->
+        </div>
+        <!--    *End of row-3    -->
+        <!--    *Row-4 start    -->
+        <div class="d-flex justify-content-evenly py-3 row">
+            <!--    *Card-1 start    -->
+            <div class="card p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-1    -->
+            <!--    *Card-2 start    -->
+            <div class="card d-none d-sm-block p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-2    -->
+            <!--    *Card-3 start    -->
+            <div class="card d-none d-md-block p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-3    -->
+            <!--    *Card-4 start    -->
+            <div class="card d-none d-lg-block p-0 special-card" style="width: 14rem;">
+                <img src="../img/sample-house.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h6 class="card-title color-darkest-orange">120.000,000.000.000 kz</h6>
+                        <p class="color-darkest-orange">3 x Parcelado</p>
+                    </div>
+                    <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
+                    <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                </div>
+            </div>
+            <!--    *End of card-4    -->
+        </div>
+        <!--    *End of row-4    -->
+    </section>
+    <!--    *End of samples section   -->
 </main>
 @endsection
