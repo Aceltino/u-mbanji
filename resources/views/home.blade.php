@@ -12,20 +12,20 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="height: 75vh;">
             <div class="carousel-item active">
                 <img src="../img/img-1.png" class="d-block vw-100" alt="Advertising-1">
                 <div class="carousel-caption d-none d-md-block position-absolute start-0 text-start top-0 px-5 pt-5 w-50">
                     <h1 class="fs-7 text-uppercase">U-Mbanji</h1>
                     <h2 class="fs-2 text-uppercase">O portal de <span class="color-darkest-orange">venda</span>/<span class="color-darkest-orange">aluguel</span> de <span class="color-darkest-orange">casa!</span></h2>
-                    <p class="fs-4 mt-4">A <span class="color-darkest-orange">U-MBANJI</span> dá-te a possibilidade de divulgar <span class="color-darkest-orange">gratuitamente</span> a sua CASA. Milhares de pessoas procuram por uma casa <span class="the-blue-one">aqui</span> no nosso portal, você também pode encontrar a sua casa aqui</p>
+                    <p class="fs-4 mt-4 mb-2">A <span class="color-darkest-orange">U-MBANJI</span> dá-te a possibilidade de divulgar <span class="color-darkest-orange">gratuitamente</span> a sua CASA. Milhares de pessoas procuram por uma casa <span class="the-blue-one">aqui</span> no nosso portal, você também pode encontrar a sua casa aqui</p>
                     <a class="a-main-bg py-1 px-5 rounded-2 text-center text-white text-uppercase w-100" href="#">Saber mais</a>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="../img/img-1.png" class="d-block vw-100" alt="Advertising-2">
                 <div class="carousel-caption d-none d-md-block position-absolute start-0 text-start top-0 px-5 pt-5 w-50">
-                    <h1 class="fs-7 text-uppercase">U-Mbanji</h1>
+                    <h1 class="text-uppercase">U-Mbanji</h1>
                     <h2 class="fs-2 text-uppercase">O portal de <span class="color-darkest-orange">venda</span>/<span class="color-darkest-orange">aluguel</span> de <span class="color-darkest-orange">casa!</span></h2>
                     <p class="fs-4 mt-4">A <span class="color-darkest-orange">U-MBANJI</span> dá-te a possibilidade de divulgar <span class="color-darkest-orange">gratuitamente</span> a sua CASA. Milhares de pessoas procuram por uma casa <span class="the-blue-one">aqui</span> no nosso portal, você também pode encontrar a sua casa aqui</p>
                     <a class="a-main-bg py-1 px-5 rounded-2 text-center text-white text-uppercase w-100" href="#">Saber mais</a>
