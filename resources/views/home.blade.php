@@ -123,7 +123,7 @@
                                     <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
                                 <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
-                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
                                 </div>
                             </div>
                             <!--    *End of card-1    -->
@@ -136,7 +136,7 @@
                                     <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
                                 <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
-                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
                                 </div>
                             </div>
                             <!--    *End of card-2    -->
@@ -149,7 +149,7 @@
                                     <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
                                 <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
-                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
                                 </div>
                             </div>
                             <!--    *End of card-3    -->
@@ -162,7 +162,7 @@
                                     <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
                                 <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
-                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
                                 </div>
                             </div>
                             <!--    *End of card-4    -->
@@ -179,7 +179,7 @@
                                     <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
                                 <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
-                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
                                 </div>
                             </div>
                             <!--    *End of card-1    -->
@@ -192,7 +192,7 @@
                                     <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
                                 <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
-                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
                                 </div>
                             </div>
                             <!--    *End of card-2    -->
@@ -205,7 +205,7 @@
                                     <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
                                 <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
-                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
                                 </div>
                             </div>
                             <!--    *End of card-3    -->
@@ -218,7 +218,7 @@
                                     <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
                                 <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
-                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
                                 </div>
                             </div>
                             <!--    *End of card-4    -->
@@ -235,7 +235,7 @@
                                     <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
                                 <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
-                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
                                 </div>
                             </div>
                             <!--    *End of card-1    -->
@@ -248,7 +248,7 @@
                                     <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
                                 <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
-                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
                                 </div>
                             </div>
                             <!--    *End of card-2    -->
@@ -261,7 +261,7 @@
                                     <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
                                 <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
-                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
                                 </div>
                             </div>
                             <!--    *End of card-3    -->
@@ -274,7 +274,7 @@
                                     <p class="color-darkest-orange">3 x Parcelado</p>
                                 </div>
                                 <h6 class="card-text mb-4">Prenda, Rua CDTE Arguelles, T4, 1 WC, 1 Cozinha, Jardim...</h6>
-                                <a href="#" class="a-main-like-btn-bg btn btn-sm text-white w-100">Ver mais</a>
+                                <a href="#" class="a-main-like-btn-bg btn text-white w-100">Ver mais</a>
                                 </div>
                             </div>
                             <!--    *End of card-4    -->
@@ -292,7 +292,7 @@
             <!--    *End of carousel-3  -->
         </div>
         <div class="d-flex my-5 justify-content-center" id="see-more-link-section">
-            <a class="btn btn-success btn-sm w-50" href="#">Ver mais casas <i class="bi bi-arrow-right-circle d-none d-md-inline"></i></a>
+            <a class="btn btn-success w-50" href="#">Ver mais casas <i class="bi bi-arrow-right-circle d-none d-md-inline"></i></a>
         </div>
     </section>
     <!--    *End of recently posted section    -->
