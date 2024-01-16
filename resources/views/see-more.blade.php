@@ -5,7 +5,7 @@
 @section('conteudo')
 <main class="w-100">
     <!--    *Main carousel section start   -->
-    <section class="h-50">
+    <section>
         <!--    *Main carousel start   -->
         <div id="mainCarouselIndicatorsSeeMore" class="carousel slide vw-100">
             <div class="carousel-indicators">
@@ -15,13 +15,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../img/sample-house-lg.png" class="d-block vw-100" alt="House-1">
+                    <img src="../img/sample-house-lg.png" class="d-block w-100" alt="House-1">
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/sample-house-lg.png" class="d-block vw-100" alt="House-2">
+                    <img src="../img/sample-house-lg.png" class="d-block w-100" alt="House-2">
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/sample-house-lg.png" class="d-block vw-100" alt="House-3">
+                    <img src="../img/sample-house-lg.png" class="d-block w-100" alt="House-3">
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-7">
                 <article class="px-3">
-                    <h2 class="fs-1">Sobre o lugar</h2>
+                    <h2>Sobre o lugar</h2>
                     <p class="fs-4">
                         Num tranquilo bairro suburbano, uma casa de dois andares se destaca pela sua aura acolhedora e charmosa. A fachada, pintada num tom suave de azul celeste, contrasta harmoniosamente com as janelas de madeira branca que parecem sorrir para quem passa... <span class="color-darkest-orange">(ver mais)</span>
                     </p>
@@ -81,7 +81,7 @@
     <section class="bg-cream container-fluid py-5 w-100">
         <div class="row">
             <div class="col-12">
-               <h2 class="color-darkest-orange fs-1 text-center">Sala de estar</h2>
+               <h2 class="color-darkest-orange text-center">Sala de estar</h2>
                <div class="d-flex justify-content-evenly mt-5">
                     <div>
                         <ul class="fs-4">

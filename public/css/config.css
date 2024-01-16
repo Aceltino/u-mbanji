@@ -11,6 +11,7 @@
     --darkest-brown: #793B12;
     --darkest-orange: #DE7F41;
     --lighter-orange: #F1860F;
+    --form-orange: #F6B68C;
     --transparent-orange: #FAD3A8;
     --cream-color: #F0E3D2;
     --the-blue-one: #001AFF;
@@ -33,8 +34,17 @@ body{
     color: var(--darkest-orange);
 }
 
+.color-darkest-orange:hover{
+    color: var(--darkest-orange);
+}
+
 .bg-darkest-orange{
     background-color: var(--darkest-orange);
+}
+
+
+.bg-form-orange{
+    background-color: var(--form-orange);
 }
 
 .color-transparent-orange{
@@ -93,6 +103,15 @@ body{
 .main-btn-bg{
     background-color: var(--lighter-orange);
     text-decoration: none;
+}
+/*  Form button  */
+.btn-form, .btn-form:hover {
+    background-color: var(--darkest-orange);
+}
+
+.btn-form-outline, .btn-form-outline:hover{
+    border: 1px solid var(--darkest-orange);
+    color: var(--darkest-orange);
 }
 
 .main-btn-bg:hover{

@@ -24,12 +24,33 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/sobre', function () {
-    return view('about');
+Route::get('/adicionar-dados-bancarios', function () {
+    return view('add-bank-details');
 });
 
 Route::get('/alugar-comprar', function () {
     return view('buy-rent');
+});
+
+Route::get('/cadastro', function () {
+    return view('register');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/redefinir-senha', function () {
+    return view('password-reset');
+});
+
+Route::get('/recuperar-senha', function () {
+    return view('password-recovery');
+});
+
+
+Route::get('/sobre', function () {
+    return view('about');
 });
 
 Route::get('/ver-mais', function () {

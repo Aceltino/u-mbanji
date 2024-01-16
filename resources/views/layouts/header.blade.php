@@ -1,7 +1,9 @@
 <!--    *Header start    -->
 <header class="w-100">
-    <section class="d-flex justify-content-center py-3" id="header-logo-section">
-        <img alt="logo" class="w-25 " src="../img/logo-with-an-orange-bg.png">
+    <section class="align-items-center d-flex justify-content-center py-2" id="header-logo-section">
+        <div class="d-flex justify-content-center w-50">
+            <img alt="logo" class="w-25 " src="../img/logo-with-an-orange-bg.png">
+        </div>
     </section>
 
     <!--    *Nav start  -->
