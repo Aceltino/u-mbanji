@@ -56,3 +56,13 @@ Route::get('/sobre', function () {
 Route::get('/ver-mais', function () {
     return view('see-more');
 });
+
+// Páginas com login
+Route::get('/home', function () {
+    return view('client-owner/home');
+});
+
+// Páginas do Adm
+Route::get('/admin', function () {
+    return view('admin/home');
+});

@@ -8,13 +8,16 @@
     --secondary-font: 'Saira Stencil One', sans-serif;
 
     /*  *Colors */
+    --cream-color: #F0E3D2;
     --darkest-brown: #793B12;
     --darkest-orange: #DE7F41;
     --lighter-orange: #F1860F;
     --form-orange: #F6B68C;
-    --transparent-orange: #FAD3A8;
-    --cream-color: #F0E3D2;
+    --old-brown: #63544B;
+    --other-cream-color: #F5EDE7;
+    --pink-orange: #C5AEAE;
     --the-blue-one: #001AFF;
+    --transparent-orange: #FAD3A8;
 }
 
 body{
@@ -47,6 +50,10 @@ body{
     background-color: var(--form-orange);
 }
 
+.bg-lighter-orange{
+    background-color: var(--lighter-orange);
+}
+
 .color-transparent-orange{
     color: var(--transparent-orange);
 }
@@ -67,9 +74,32 @@ body{
     color: var(--the-blue-one);
 }
 
+.bg-other-cream-color{
+    background-color: var(--other-cream-color);
+}
+
+.color-old-brown{
+    color: var(--old-brown);
+}
+.bg-old-brown{
+    background-color: var(--old-brown);
+}
+
+.color-pink-orange{
+    color: var(--pink-orange);
+}
+
+.bg-pink-orange{
+    background-color: var(--pink-orange);
+}
+
 /*  *Size   */
 .fs-7{
     font-size: 4rem;
+}
+
+.fs-red-1{
+    font-size: 0.70rem;
 }
 
 .h-4{
@@ -122,6 +152,10 @@ body{
 .main-btn-bg:active{
     background-color: var(--lighter-orange) !important;
     text-decoration: none !important;
+}
+
+.a-adm-main-btn, .a-adm-main-btn:hover{
+    border: 1px solid black;
 }
 
 .cards-wrapper{
@@ -192,6 +226,15 @@ a.darkest-brown:active, a.darkest-brown:hover{
     box-shadow: 0 0 0 0.1rem var(--lighter-orange); 
 }
 /**  ---------- x End of About x ----------   */
+
+.bl-2{
+    border-left: 2px solid #3574D2;
+}
+
+/*  Width   */
+.w-10-percent{
+    width: 10%;
+}
 
 /*  *LG    */
 @media screen and (max-width: 992px) {
