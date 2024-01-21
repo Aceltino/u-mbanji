@@ -333,7 +333,7 @@
     </section>
     <!--    *End of pagination section   -->
 
-    <!--    Modal start    -->
+    <!--    Modal-1 start    -->
     <div class="modal fade" id="seeMoreModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-xl">
             <div class="modal-content">
@@ -475,15 +475,40 @@
                         </div>
                     </section>
                 </div>
-                <div class="modal-footer d-flex justify-content-center">
+                <div class="d-flex modal-footer justify-content-center">
                     <section class="d-flex gap-3">
                         <button type="button" class="btn btn-warning px-5 text-white" data-bs-dismiss="modal">Voltar</button>
-                        <button type="button" class="a-main-like-btn-bg btn text-white px-4">Solicitar casa</button>
+                        <button type="button" class="a-main-like-btn-bg btn text-white px-4" data-bs-toggle="modal" data-bs-target="#confirmationModal">Solicitar casa</button>
                     </section>
                 </div>
             </div>
         </div>
     </div>
-    <!--    End of modal    -->
+    <!--    End of modal-1    -->~
+    
+    <!-- Modal-2 -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="d-flex modal-header justify-content-center">
+                    <i class="bi bi-exclamation-octagon fs-1"></i>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-center">Pretende “COMPRAR” está casa?</h3>
+                </div>
+                <div class="d-flex modal-footer justify-content-center">
+                    <section class="d-flex gap-3">
+                        <button type="button" class="btn btn-warning px-3 text-white" data-bs-dismiss="modal">
+                            Ajustar solicitação
+                        </button>
+                        <button type="button" class="a-main-like-btn-bg btn text-white px-4" data-bs-toggle="modal" data-bs-target="#confirmationModal">
+                            Solicitar casa
+                        </button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    End of modal-2   -->
 </main>
 @endsection
