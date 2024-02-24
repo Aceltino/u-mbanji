@@ -13,7 +13,7 @@
             <div>
                 <h1 class="fs-3 text-center">Login</h1>
             </div>
-            
+
             <div class="mb-3">
                 <label class="form-text" for="username-or-phone-number">Nome de usuário ou telefone</label>
                 <input class="form-control" id="username-or-phone-number" required type="text">
@@ -26,9 +26,9 @@
             <section>
                 <div class="d-flex flex-column justify-content-center">
                     <button class="btn btn-form mb-4 mt-3 text-white w-100" type="button">Entrar</button>
-                    <a class="color-darkest-orange mb-4 text-center text-decoration-none" href="#">Esqueceu a palavra-passe?</a>
+                    <a class="color-darkest-orange mb-4 text-center text-decoration-none" href="{{route('recovery.user')}}">Esqueceu a palavra-passe?</a>
                     <hr class="bg-darkest-orange color-darkest-orange mb-4 mt-1">
-                    <a class="btn btn-form-outline mb-3 mt-2 w-100" href="#">Página inicial</a>
+                    <a class="btn btn-form-outline mb-3 mt-2 w-100" href="{{route('home')}}">Página inicial</a>
                 </div>
             </section>
         </form>

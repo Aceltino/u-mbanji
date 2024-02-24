@@ -7,5 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Deal extends Model
 {
-    use HasFactory;
+    protected $table = 'deals';
+    protected $primaryKey = 'deal_id';
+
+    protected $fillable = [
+            'datetime_in',
+            'datetime_out',
+            'payment_status',
+            'deal_status',
+            'proprietary_id',
+            'client_id',
+            'payment',
+            'property_id',
+            'created'
+    ];
 }

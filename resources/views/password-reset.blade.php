@@ -31,7 +31,7 @@
 
             <section class="d-flex justify-content-center mb-3">
                 <div class="align-items-center col-12 d-flex gap-4 justify-content-between flex-column-reverse flex-lg-row">
-                    <a class="btn btn-form-outline w-100" href="#">Página inicial</a>
+                    <a class="btn btn-form-outline w-100" href="{{route('home')}}">Página inicial</a>
                     <button class="btn btn-form text-white w-100" type="button">Redefinir</button>
                 </div>
             </section>

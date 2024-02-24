@@ -7,5 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class PropertyDescription extends Model
 {
-    use HasFactory;
+    protected $table = 'property_descriptions';
+    protected $primaryKey = 'description_id';
+
+    protected $fillable = [
+            'description',
+            'type_description',
+            'property_id',
+            'updated',
+            'created'
+    ];
 }
