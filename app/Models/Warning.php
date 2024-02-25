@@ -17,6 +17,7 @@ class Warning extends Model
             'created'
     ];
 
+    
     public function user(): HasMany
     {
         return $this->hasMany(User::class, 'user_id','warning_id');

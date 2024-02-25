@@ -77,9 +77,9 @@
             <section class="d-flex justify-content-center">
                 <div class="col-12 col-lg-4 d-flex flex-column justify-content-center">
                     <button class="btn btn-form mb-4 mt-3 text-white w-100" type="button">Cadastrar</button>
-                    <a class="color-darkest-orange mb-4 text-center text-decoration-none" href="#">Já tem uma conta?</a>
+                    <a class="color-darkest-orange mb-4 text-center text-decoration-none" href="{{route('register.user')}}">Já tem uma conta?</a>
                     <hr class="bg-darkest-orange color-darkest-orange mb-4 mt-1">
-                    <a class="btn btn-form-outline mt-2 w-100" href="#">Página inicial</a>
+                    <a class="btn btn-form-outline mt-2 w-100" href="{{route('home')}}">Página inicial</a>
                 </div>
             </section>
         </form>

@@ -11,16 +11,16 @@
                         <h2 class="darkest-brown fs-1">Links utéis</h2>
                         <ul class="mb-0 list-unstyled">
                             <li>
-                                <a class="darkest-brown nav-link" href="#">Sobre o U-MBANJI</a>
+                                <a class="darkest-brown nav-link" href="{{route('about')}}">Sobre o U-MBANJI</a>
                             </li>
                             <li>
-                                <a class="darkest-brown nav-link" href="#">Alugar/Comprar uma casa</a>
+                                <a class="darkest-brown nav-link" href="{{route('buyrent')}}">Alugar/Comprar uma casa</a>
                             </li>
                             <li>
-                                <a class="darkest-brown nav-link" href="#">Registrar sua propriedade no portal</a>
+                                <a class="darkest-brown nav-link" href="{{route('register.user')}}">Registrar sua propriedade no portal</a>
                             </li>
                             <li>
-                                <a class="darkest-brown nav-link" href="#">Termos e Politicas de Privacidade</a>
+                                <a class="darkest-brown nav-link" href="{{route('home')}}">Termos e Politicas de Privacidade</a>
                             </li>
                         </ul>
                     </div>

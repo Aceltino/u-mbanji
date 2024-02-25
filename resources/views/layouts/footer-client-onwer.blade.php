@@ -14,7 +14,7 @@
                             <a class="darkest-brown nav-link" href="#">Solicitar propriedade</a>
                         </li>
                         <li>
-                            <a class="darkest-brown nav-link" href="#">Registrar sua propriedade no portal</a>
+                            <a class="darkest-brown nav-link" href="{{route('home')}}">Registrar sua propriedade no portal</a>
                         </li>
                         <li>
                             <a class="darkest-brown fw-bold  nav-link" href="#">Termos e Politicas de Privacidade</a>

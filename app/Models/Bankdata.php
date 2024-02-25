@@ -7,5 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Bankdata extends Model
 {
-    use HasFactory;
+    protected $table = 'bankdatas';
+    protected $primaryKey = 'iban';
+
+    protected $fillable = [
+            'owner_name',
+            'account_number',
+            'personal_id',
+            'updated',
+            'created'
+    ];
 }

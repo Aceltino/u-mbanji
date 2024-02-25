@@ -4,7 +4,13 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\{
     //Classes das Controllers
-    HomeController
+    HomeController,
+    PropertyController,
+    BankController,
+    AuthController,
+    ClientController,
+    AdminController,
+    UserController
 };
 /*
 |--------------------------------------------------------------------------
@@ -17,52 +23,37 @@ use App\Http\Controllers\{
 |
 */
 
+// TESTESSSS
+Route::get('/insert', [UserController::class, 'teste'])->name('teste');
+
+
+
 // Páginas sem login
-/*Route::get('/', [HomeController::class,'viewHome'])->name('home');*/
+// HOMEPAGES-CONTROLLER
+Route::get('/', [HomeController::class,'viewHome'])->name('home');
+Route::get('/sobre', [HomeController::class,'viewAbout'])->name('about');
+Route::get('/alugar-comprar', [PropertyController::class,'viewBuyRent'])->name('buyrent');
 
-Route::get('/', function () {
-    return view('home');
+
+Route::get('/adicionar-dados-bancarios', [BankController::class,'viewAddBankAccount'])->name('addbankaccount');
+
+//Autenticação
+Route::prefix('autenticacao')->group(function(){
+    Route::get('registrar', [AuthController::class, 'viewRegister'])->name('register.user');
+    Route::get('entrar', [AuthController::class, 'viewLogin'])->name('login.user');
+    Route::get('redefinir-senha', [AuthController::class, 'viewRedefinePass'])->name('redefine.user');
+    Route::get('recuperar-senha', [AuthController::class, 'viewRecoveryPass'])->name('recovery.user');
 });
 
-Route::get('/adicionar-dados-bancarios', function () {
-    return view('add-bank-details');
-});
+Route::get('/ver-mais', [PropertyController::class,'viewSeeMore'])->name('seemoreproperty');
 
-Route::get('/alugar-comprar', function () {
-    return view('buy-rent');
-});
-
-Route::get('/cadastro', function () {
-    return view('register');
-});
-
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/redefinir-senha', function () {
-    return view('password-reset');
-});
-
-Route::get('/recuperar-senha', function () {
-    return view('password-recovery');
-});
-
-
-Route::get('/sobre', function () {
-    return view('about');
-});
-
-Route::get('/ver-mais', function () {
-    return view('see-more');
-});
 
 // Páginas com login
-Route::get('/home', function () {
-    return view('client-owner/home');
-});
+Route::get('/proprietario-cliente', [ClientController::class,'viewHome'])->name('home.admin');
 
-// Páginas do Adm
-Route::get('/admin', function () {
-    return view('admin/home');
-});
+
+// Páginas do Administrador
+Route::get('/admin', [AdminController::class,'viewHome'])->name('home.client');
+
+
+

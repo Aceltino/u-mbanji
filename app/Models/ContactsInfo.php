@@ -7,5 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class ContactsInfo extends Model
 {
-    use HasFactory;
+    protected $table = 'contacts_info';
+    protected $primaryKey = 'contact_id';
+
+    protected $fillable = [
+            'topic_contact',
+            'content_contact',
+            'email_contact',
+            'phone_number',
+            'personal_id',
+            'updated',
+            'created'
+    ];
 }

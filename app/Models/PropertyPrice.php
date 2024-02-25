@@ -7,5 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class PropertyPrice extends Model
 {
-    use HasFactory;
+    protected $table = 'property_prices';
+    protected $primaryKey = 'price_id';
+
+    protected $fillable = [
+            'time',
+            'price',
+            'contract',
+            'unity_time',
+            'property_id',
+            'updated',
+            'created'
+    ];
 }

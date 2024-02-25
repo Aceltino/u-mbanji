@@ -14,6 +14,8 @@ class People extends Model
     protected $fillable = [
             'full_name',
             'bi_number',
+            'level_access',
+            'user_photo',
             'user_id',
             'updated',
             'created'

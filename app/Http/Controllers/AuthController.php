@@ -7,11 +7,27 @@ use App\Models\User;
 
 class AuthController extends Controller
 {
-
-    public static function registerForm()
+    public static function viewRegister()
     {
-        return 'Tela de Registro';
-        // return view('register');
+        return view('register');
     }
+
+    public function viewLogin()
+    {
+        return view('login');
+    }
+
+    public function viewRedefinePass()
+    {
+        return view('password-reset');
+    }
+
+    public function viewRecoveryPass()
+    {
+        return view('password-recovery');
+    }
+
+
+
 
 }
