@@ -2,25 +2,15 @@
 
 namespace App\Http\Controllers;
 use App\Models\User; //Model
-use App\Traits\UserTrait; //Trait
-
 
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    private function store($datas):int
+    public static function store($datas)
     {
-        $user =
-        [
-            'username' => $datas['username'],
-            'email' => $datas['email'],
-            'password' => $datas['password'],
-            'user_status' => $datas['user_status'],
-        ];
-
-        $createUSer = User::create($user);
-        return $createUSer->user_id;
+        $created = User::create($datas);
+        return $created;
     }
 
     public static function update($datas):bool
@@ -31,19 +21,51 @@ class UserController extends Controller
          {
             $user->$key = $value;
         }
-
         return $user->save();
     }
 
-    public function teste()
+    public static function rules()
     {
-        $user =
+        $rules =
         [
-            'username' => 'Acel0001',
-            'email' => 'cesaltinoquianv@gmail.com',
-            'password' => 'Acelt!1no!1',
-            'user_status' => 1,
+            'email' =>'required|email',
+            'password'=>'required|string|min:4',
+            'numberPhone' =>'required|int|max:15'
         ];
-       return $this->store($user);
+
+        $errors = [
+            '*.required'=>'Este campo deve ser preenchido',
+            '*.email'=>'Email inválido',
+            '*.min'=>'Palavra-passe deve conter no minimo 4 caracteres',
+            '*.integer'=>'Valor inválido',
+            '*.max'=>'Valor inválido'
+        ];
+
+        return [$rules, $errors];
+    }
+
+    public static function get($datas)
+    {
+        $found = User::find($datas);
+        return $found;
+    }
+
+    public static function getNumber($datas)
+    {
+        $found = User::where('number', $datas)->first();
+        return $found;
+    }
+
+    public static function getEmail($datas)
+    {
+        $found = User::where('email', $datas)->first();
+        return $found;
     }
 }
+
+
+// public static function pegarPessoa($idPessoa)
+// {
+//     $pessoa = Pessoa::find($idPessoa);
+//     return $pessoa;
+// }

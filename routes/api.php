@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\InputController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -13,7 +15,15 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
+Route::post('/login', [AuthController::class, 'logar']);
+//CADASTRO
+Route::post('/register-user', [InputController::class, 'peopleInputs']); //USER
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware(['auth:sanctum'])->group(function()
+{
+    Route::post('/register-bankdata', [InputController::class, 'bankDataInputs']); //Bank
+    Route::post('/register-phone', [InputController::class, 'phoneInputs']); //Bank
+    Route::post('/register-property', [InputController::class, 'propertyInputs']); //Bank
+
 });
+

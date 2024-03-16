@@ -11,6 +11,8 @@ class People extends Model
     protected $table = 'people';
     protected $primaryKey = 'personal_id';
 
+    public $timestamps = false;
+
     protected $fillable = [
             'full_name',
             'bi_number',
@@ -21,7 +23,7 @@ class People extends Model
             'created'
     ];
 
-    public function user(): HasOne
+    public function user()
     {
         return $this->hasOne(User::class, 'user_id', 'personal_id');
     }
