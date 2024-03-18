@@ -9,6 +9,7 @@ class PropertyDescription extends Model
 {
     protected $table = 'property_descriptions';
     protected $primaryKey = 'description_id';
+    public $timestamps = false;
 
     protected $fillable = [
             'description',

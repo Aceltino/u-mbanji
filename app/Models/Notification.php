@@ -9,6 +9,7 @@ class Notification extends Model
 {
     protected $table = 'notifications';
     protected $primaryKey = 'notification_id';
+    public $timestamps = false;
 
     protected $fillable = [
             'action_notified',

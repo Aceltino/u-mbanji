@@ -9,6 +9,7 @@ class Deal extends Model
 {
     protected $table = 'deals';
     protected $primaryKey = 'deal_id';
+    public $timestamps = false;
 
     protected $fillable = [
             'datetime_in',
@@ -17,7 +18,7 @@ class Deal extends Model
             'deal_status',
             'proprietary_id',
             'client_id',
-            'payment',
+            'contract_id',
             'property_id',
             'created'
     ];

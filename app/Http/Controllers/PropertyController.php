@@ -27,13 +27,13 @@ class PropertyController extends Controller
     {
         $rules =
         [
-            // 'property_type' =>'required|integer',
-            // 'property_location' =>'required|string',
-            // 'property_description' =>'string',
-            // 'property_bedRoom' =>'integer',
-            'property_img' => 'required|image|max:1024',
-            // 'property_proof' =>'image|max:1024',
-            // 'municipality_id' =>'required|int',
+            'property_type' =>'required|integer',
+            'property_location' =>'required|string',
+            'property_description' =>'nullable|string',
+            'property_bedRoom' =>'integer',
+            'property_img' => 'required|image|mimes:jpeg,png,jpg,svg|max:1024',
+            'property_proof' =>'nullable|image|image|mimes:jpeg,png,jpg,svg|max:1024',
+            'municipality_id' =>'required|int',
         ];
 
         $errors = [

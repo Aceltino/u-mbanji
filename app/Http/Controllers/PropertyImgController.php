@@ -28,12 +28,16 @@ class PropertyImgController extends Controller
     {
         $rules =
         [
-            'property_img' => 'image|max:1024',
+            'img_file' => 'required|image|mimes:jpeg,png,jpg,svg|max:1024',
+            'property_id' => 'required|int',
+
         ];
 
         $errors = [
             '*.image'=>'Este campo deve ser uma imagem',
-            '*.max'=>'A imagem não deve ter mais de 1 megaByte'
+            '*.max'=>'A imagem não deve ter mais de 1 megaByte',
+            '*.integer'=>'Valor inválido'
+
         ];
 
         return [$rules, $errors];
@@ -43,6 +47,12 @@ class PropertyImgController extends Controller
     {
         $found = PropertyImg::find($datas);
         return $found;
+    }
+
+    public static function getCountimg($property)
+    {
+        $count = PropertyImg::where('property_id', $property)->count();
+        return $count;
     }
 
 }

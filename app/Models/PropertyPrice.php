@@ -9,6 +9,7 @@ class PropertyPrice extends Model
 {
     protected $table = 'property_prices';
     protected $primaryKey = 'price_id';
+    public $timestamps = false;
 
     protected $fillable = [
             'time',

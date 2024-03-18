@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\PropertyPrice; //Model
+use App\Models\PaymentValue;
 
-class PropertyPriceController extends Controller
+class PaymentValueController extends Controller
 {
     public static function store($datas)
     {
-        $created = PropertyPrice::create($datas);
+        $created = PaymentValue::create($datas);
         return $created;
     }
 
     public static function update($datas):bool
     {
-        $user = PropertyPrice::find($datas['price_id']);
+        $user = PaymentValue::find($datas['contract_id']);
 
         foreach ($datas as $key => $value)
          {
@@ -28,15 +28,16 @@ class PropertyPriceController extends Controller
         $rules =
         [
             'time' => 'required|int',
-            'price' => 'required',
+            'property_id' => 'required|int',
             'contract' => 'required|int',
             'unity_time' => 'required|int',
-            'property_id' => 'required|int'
+            'price' => 'required|int',
         ];
 
-        $errors = [
+        $errors =
+        [
             '*.required'=>'Este campo deve ser preenchido',
-            '*.integer'=>'Valor inválido'
+            '*.integer'=>'Valor inválido',
         ];
 
         return [$rules, $errors];
@@ -44,15 +45,7 @@ class PropertyPriceController extends Controller
 
     public static function get($datas)
     {
-        $found = PropertyPrice::find($datas);
+        $found = PaymentValue::find($datas);
         return $found;
-    }
-
-    public static function getProperty($property, $unity)
-    {
-        $propertyResult = PropertyPrice::where('property_id', $property)
-                                        ->where('unity_time', $unity)
-                                        ->first();
-        return $propertyResult;
     }
 }

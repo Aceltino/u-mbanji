@@ -22,8 +22,17 @@ Route::post('/register-user', [InputController::class, 'peopleInputs']); //USER
 Route::middleware(['auth:sanctum'])->group(function()
 {
     Route::post('/register-bankdata', [InputController::class, 'bankDataInputs']); //Bank
-    Route::post('/register-phone', [InputController::class, 'phoneInputs']); //Bank
-    Route::post('/register-property', [InputController::class, 'propertyInputs']); //Bank
+    Route::post('/register-phone', [InputController::class, 'phoneInputs']); //Phone
+    Route::post('/register-property', [InputController::class, 'propertyInputs']); //Property
+    Route::post('/register-property-img', [InputController::class, 'propertyImgInputs']); //Property-IMG
+    Route::post('/register-property-desc', [InputController::class, 'propertyDesc']); //Property-DESC
+    Route::post('/register-property-price', [InputController::class, 'propertyPrice']); //Property-Price
+    Route::post('/register-deal', [InputController::class, 'dealProperty']); //Property-deal
+
+
+
+
+
 
 });
 

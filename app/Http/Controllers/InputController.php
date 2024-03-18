@@ -147,7 +147,7 @@ class InputController extends Controller
         return APIResponseController::savedResponse();
     }
 
-    public function propertyInputs(Request $request) //REGISTRAR TELEFONE
+    public function propertyInputs(Request $request) //REGISTRAR PROPERTY
     {
         $error = array();
 
@@ -170,18 +170,216 @@ class InputController extends Controller
             return APIResponseController::errorWithErrors($error, 422, 'Dados inválidos!');
         }
 
-        $imageName = Str::random(32).".".$request->property_img->getClientOriginalExtension();
+        $personalID = PeopleController::getPersonalId()->personal_id;
 
-        $done = Storage::disk('public')->put($imageName, file_get_contents($request->property_img));
-dd($done);
+        $imageMain = $personalID.'mbjanji'.time().".".$request->property_img->getClientOriginalExtension();
+        Storage::disk('public')->put($imageMain, file_get_contents($request->property_img));
 
-        $phone =
+        $imageProof = 'mbjanji'.$personalID.time().".".$request->property_proof->getClientOriginalExtension();
+        Storage::disk('public')->put($imageProof, file_get_contents($request->property_proof));
+
+        $property =
             [
-                "number" => $request->numberPhone,
-                "personal_id" => PeopleController::getPersonalId()->personal_id
+                'property_type' => $request->property_type,
+                'property_location' => $request->property_location,
+                'property_description' => $request->property_type,
+                'property_status' => 1,
+                'property_bedRoom' => $request->property_bedRoom,
+                'property_img' => $imageMain,
+                'property_proof' => $imageProof,
+                'municipality_id' => $request->municipality_id,
+                "personal_id" => $personalID
             ];
-        NumberController::store($phone);
+        PropertyController::store($property);
 
         return APIResponseController::savedResponse();
+    }
+
+    public function propertyImgInputs(Request $request) //REGISTRAR PROPERTY-IMG
+    {
+        $error = array();
+
+        $rules = [
+            PropertyImgController::rules()[0],
+        ];
+
+        $errors = [
+            PropertyImgController::rules()[1],
+        ];
+
+        // dd($request->all(), $rules[0], $errors[0]);
+        $validator = Validator::make($request->all(), $rules[0], $errors[0]);
+
+        if ($validator->fails()) {
+            $error[] = $validator->errors()->toArray();
+        }
+
+        $propertylID = $request->property_id;
+
+        if(PropertyImgController::getCountimg($propertylID) > 4)
+        {
+            return APIResponseController::error(401, 'Não pode registrar mais de 5 imagens!');
+        }
+        if (!empty($error))
+        {
+            return APIResponseController::errorWithErrors($error, 422, 'Dados inválidos!');
+        }
+
+        $imageMain = $propertylID.'mbjanji'.time().".".$request->img_file->getClientOriginalExtension();
+        Storage::disk('public')->put($imageMain, file_get_contents($request->img_file));
+
+        $property =
+            [
+                'img_file' => $imageMain,
+                "property_id" => $propertylID
+            ];
+            PropertyImgController::store($property);
+
+        return APIResponseController::savedResponse();
+    }
+
+    public function propertyDesc(Request $request) //REGISTRAR PROPERTY-DESCRIÇAO
+    {
+        $error = array();
+
+        $rules = [
+            PropertyDescController::rules()[0],
+        ];
+
+        $errors = [
+            PropertyDescController::rules()[1],
+        ];
+
+        $validator = Validator::make($request->all(), $rules[0], $errors[0]);
+
+        if ($validator->fails())
+        {
+            $error[] = $validator->errors()->toArray();
+        }
+
+        if (!empty($error))
+        {
+            return APIResponseController::errorWithErrors($error, 422, 'Dados inválidos!');
+        }
+
+        foreach($request->description as $description)
+        {
+            $property =
+            [
+                'description' => $description['description'],
+                'type_description' => $description['type'],
+                "property_id" => $request->property_id
+            ];
+            PropertyDescController::store($property);
+        }
+
+        return APIResponseController::savedResponse();
+    }
+
+    public function propertyPrice(Request $request) //REGISTRAR PROPERTY-DESCRIÇAO
+    {
+        $error = array();
+
+        $rules = [
+            PropertyPriceController::rules()[0],
+        ];
+
+        $errors = [
+            PropertyPriceController::rules()[1],
+        ];
+
+        $validator = Validator::make($request->all(), $rules[0], $errors[0]);
+
+        if ($validator->fails())
+        {
+            $error[] = $validator->errors()->toArray();
+        }
+        $propertySeek = PropertyPriceController::getProperty($request->property_id, $request->unity_time);
+        if ($propertySeek)
+        {
+            $property =
+            [
+                'price_id' => $propertySeek->price_id,
+                'time' => $request->time,
+                'price' => $request->price
+            ];
+            PropertyPriceController::update($property);
+            return APIResponseController::savedResponse();
+        }
+
+        if (!empty($error))
+        {
+            return APIResponseController::errorWithErrors($error, 422, 'Dados inválidos!');
+        }
+            $property =
+            [
+                'time' => $request->time,
+                'price' => $request->price,
+                "contract" => $request->contract,
+                'unity_time' => $request->unity_time,
+                'property_id' => $request->property_id
+            ];
+            PropertyPriceController::store($property);
+
+        return APIResponseController::savedResponse();
+    }
+
+    public function dealProperty(Request $request)
+    {
+        $error = array();
+
+        $rules = [
+            DealController::rules()[0],
+            PaymentValueController::rules()[0]
+        ];
+
+        $errors = [
+            DealController::rules()[1],
+            PaymentValueController::rules()[1]
+        ];
+
+        $validator = Validator::make($request->all(), $rules, $errors);
+        if ($validator->fails())
+        {
+            $error[] = $validator->errors()->toArray();
+        }
+
+
+        if (!empty($error))
+        {
+            return APIResponseController::errorWithErrors($error, 422, 'Dados inválidos!');
+        }
+        // dd($request->all());
+            $paymentValue =
+            [
+                'time' => $request->time,
+                'price' => $request->price,
+                "contract" => $request->contract,
+                'unity_time' => $request->unity_time,
+                'property_id' => $request->property_id
+            ];
+            $payValue = PaymentValueController::store($paymentValue);
+
+            $deal =
+            [
+                'datetime_in' => $request->datetime_in,
+                'datetime_out' => $request->datetime_out,
+                'payment_status' => 3,
+                'deal_status' => 0,
+                'proprietary_id' => $request->proprietary_id,
+                'client_id' => PeopleController::getPersonalId()->personal_id,
+                'property_id' => $request->property_id,
+                'contract_id' => $payValue->contract_id
+            ];
+            $dealDone = DealController::store($deal);
+
+            $payDeal =
+            [
+                'deal_id' => $dealDone->deal_id,
+            ];
+            PaymentDealController::store($payDeal);
+
+        return APIResponseController::savedResponse();
+
     }
 }

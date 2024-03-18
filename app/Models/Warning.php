@@ -10,6 +10,7 @@ class Warning extends Model
 
     protected $table = 'warnings';
     protected $primaryKey = 'warning_id';
+    public $timestamps = false;
 
     protected $fillable = [
             'warning',
@@ -17,8 +18,8 @@ class Warning extends Model
             'created'
     ];
 
-    
-    public function user(): HasMany
+
+    public function user()
     {
         return $this->hasMany(User::class, 'user_id','warning_id');
     }

@@ -9,6 +9,7 @@ class Property extends Model
 {
     protected $table = 'properties';
     protected $primaryKey = 'property_id';
+    public $timestamps = false;
 
     protected $fillable = [
             'property_type',

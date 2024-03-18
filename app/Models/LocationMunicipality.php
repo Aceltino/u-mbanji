@@ -9,6 +9,7 @@ class LocationMunicipality extends Model
 {
     protected $table = 'location_municipality';
     protected $primaryKey = 'municipality_id';
+    public $timestamps = false;
 
     protected $fillable = [
             'municipality',

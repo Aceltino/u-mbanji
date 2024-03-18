@@ -9,6 +9,7 @@ class LocationProvince extends Model
 {
     protected $table = 'location_province';
     protected $primaryKey = 'province_id';
+    public $timestamps = false;
 
     protected $fillable = [
             'province'
