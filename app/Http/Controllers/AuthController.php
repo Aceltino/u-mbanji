@@ -47,21 +47,24 @@ class AuthController extends Controller
                     "level_access" => $people->level_access,
                     "personal_id" => $people->personal_id,
                 ];
+
             return response()->json([
                 'error' => false,
                 'message' => 'Login bem-sucedido',
                 'userData' => $personalData, // inclua os dados do usuário aqui
                 'token' => $token, // inclua os dados do usuário aqui
             ], 200)->withCookie(Cookie::make('utilizador', json_encode($user)));
+
         } else {
             return APIResponseController::error(401, 'Credenciais erradas!');
         }
-    }
 
-    public function deslogar()
-    {
+    }  
+
+   /*  public function deslogar()
+    { */
         // return dd(Auth::id());
-        if (!Auth::check()) {
+       /*  if (!Auth::check()) {
             goto logout;
         }
 
@@ -71,5 +74,5 @@ class AuthController extends Controller
 
         logout:
         return APIResponseController::success();
-    }
+    } */
 }
