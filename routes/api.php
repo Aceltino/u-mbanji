@@ -1,9 +1,10 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\InputController;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Mime\Email;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::post('/login', [AuthController::class, 'logar']);
+
 //CADASTRO
 Route::post('/register-user', [InputController::class, 'peopleInputs']); //USER
 
@@ -29,10 +31,9 @@ Route::middleware(['auth:sanctum'])->group(function()
     Route::post('/register-property-price', [InputController::class, 'propertyPrice']); //Property-Price
     Route::post('/register-deal', [InputController::class, 'dealProperty']); //Property-deal
 
-
-
-
-
-
 });
+
+
+//Minhas Routas(Carlos Marques) 
+Route::post("/provide-mail", [EmailController::class, 'SendMail']);
 
