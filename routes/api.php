@@ -5,7 +5,9 @@ use App\Http\Controllers\DealController;
 use App\Http\Controllers\InputController;
 use App\Http\Controllers\PropertyController;
 use Illuminate\Http\Request;
+use App\Http\Controllers\EmailController;
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Mime\Email;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,4 +57,8 @@ Route::middleware(['auth:sanctum'])->group(function()
 
 
 });
+
+
+//Minhas Routas(Carlos Marques)
+Route::post("/provide-mail", [EmailController::class, 'SendMail']);
 
