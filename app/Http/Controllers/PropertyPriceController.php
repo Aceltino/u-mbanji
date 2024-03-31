@@ -30,7 +30,7 @@ class PropertyPriceController extends Controller
             'time' => 'required|int',
             'price' => 'required',
             'contract' => 'required|int',
-            'unity_time' => 'required|int',
+            'unity_time' => 'nullable|int',
             'property_id' => 'required|int'
         ];
 
@@ -55,4 +55,43 @@ class PropertyPriceController extends Controller
                                         ->first();
         return $propertyResult;
     }
+
+    public static function getPropertyContrat($property,$contract, $unity = null)
+    {
+        $propertyResult = PropertyPrice::where('property_id', $property)
+                                        ->where('unity_time', $unity)
+                                        ->where('contract', $contract)
+                                        ->first();
+        return $propertyResult;
+    }
+
+    public static function getPrices($id)
+    {
+        $imgsProperty = PropertyPrice::where('property_id', $id)->get();
+        return $imgsProperty;
+    }
+
+    public static function checkDuplicatePrice($propertyId, $unityTime)
+{
+    // Verifica se já existe um registro com contrato igual a 1
+    $existingContract1 = PropertyPrice::where('property_id', $propertyId)
+        ->where('contract', 1)
+        ->exists();
+
+    // Verifica se já existe um registro com o unity_time fornecido
+    $existingUnityTime = PropertyPrice::where('property_id', $propertyId)
+        ->where('unity_time', $unityTime)
+        ->exists();
+
+    // Se já existe um registro com contrato igual a 1 ou com o unity_time fornecido, retorna false
+    if ($existingContract1 || $existingUnityTime) {
+        return false;
+    }
+
+    // Caso contrário, retorna true (não existe duplicação)
+    return true;
+}
+
+
+
 }

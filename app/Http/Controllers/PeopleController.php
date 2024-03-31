@@ -29,14 +29,14 @@ class PeopleController extends Controller
         [
             'name' =>'required|string',
             'biNumber'=>'required|regex:/^\d{9}[A-Z]{2}\d{3}$/',
-            'profilePic'=> 'image|max:1024',
+            'img' => 'required|image|mimes:jpeg,png,jpg,svg|max:1024',
         ];
 
         $errors = [
             '*.required'=>'Este campo deve ser preenchido',
             '*.string'=>'Valor inválido',
             'biNumber.regex' => 'Numero de bilhete inválido',
-            '*.image'=>'Este campo deve ser uma imagem',
+            '*.img'=>'Este campo deve ser uma imagem',
             '*.max'=>'A imagem não deve ter mais de 1 megaByte',
         ];
 

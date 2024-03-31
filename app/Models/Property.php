@@ -24,4 +24,19 @@ class Property extends Model
             'updated',
             'created'
     ];
+
+    public function priceProperty()
+    {
+        return $this->hasOne(PropertyPrice::class, 'property_id', 'property_id');
+    }
+
+    public function municipality()
+    {
+        return $this->belongsTo(LocationMunicipality::class, 'municipality_id');
+    }
+
+    public function personal()
+    {
+        return $this->belongsTo(People::class, 'personal_id');
+    }
 }

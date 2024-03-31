@@ -48,4 +48,12 @@ class PaymentValueController extends Controller
         $found = PaymentValue::find($datas);
         return $found;
     }
+
+    public static function getPropertyPercetage($contract, $unity = null)
+    {
+        $propertyResult = PaymentValue::where('unity_time', $unity)
+                                        ->where('contract', $contract)
+                                        ->first();
+        return $propertyResult;
+    }
 }

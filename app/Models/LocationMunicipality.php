@@ -15,4 +15,9 @@ class LocationMunicipality extends Model
             'municipality',
             'province_id',
     ];
+
+    public function province()
+    {
+        return $this->belongsTo(LocationProvince::class, 'province_id');
+    }
 }

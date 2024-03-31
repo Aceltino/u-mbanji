@@ -23,9 +23,18 @@ class People extends Model
             'created'
     ];
 
+    public function phone()
+    {
+        return $this->hasOne(PeopleNumber::class, 'number_id', 'personal_id');
+    }
+
     public function user()
     {
         return $this->hasOne(User::class, 'user_id', 'personal_id');
     }
 
+    public function userOne()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }

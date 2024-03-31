@@ -44,4 +44,10 @@ class PropertyDescController extends Controller
         $found = PropertyDescription::find($datas);
         return $found;
     }
+
+    public static function getDescs($id)
+    {
+        $descProperty = PropertyDescription::where('property_id', $id)->get();
+        return $descProperty;
+    }
 }

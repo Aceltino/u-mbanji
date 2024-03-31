@@ -49,6 +49,12 @@ class PropertyImgController extends Controller
         return $found;
     }
 
+    public static function getImgs($id)
+    {
+        $imgsProperty = PropertyImg::where('property_id', $id)->get();
+        return $imgsProperty;
+    }
+
     public static function getCountimg($property)
     {
         $count = PropertyImg::where('property_id', $property)->count();

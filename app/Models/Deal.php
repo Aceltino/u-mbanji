@@ -18,8 +18,10 @@ class Deal extends Model
             'deal_status',
             'proprietary_id',
             'client_id',
-            'contract_id',
             'property_id',
-            'created'
+            'created',
+            'price',
+            "contract",
+            'unity_time',
     ];
 }

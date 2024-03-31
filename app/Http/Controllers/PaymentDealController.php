@@ -28,4 +28,10 @@ class PaymentDealController extends Controller
         $found = PayementDeal::find($datas);
         return $found;
     }
+
+    public static function getLastDeal($deal)
+    {
+        $dealFound = PayementDeal::where('deal_id', $deal)->latest('created')->first();
+        return $dealFound;
+    }
 }

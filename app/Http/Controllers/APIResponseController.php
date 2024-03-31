@@ -34,4 +34,13 @@ class APIResponseController extends Controller
            'message' => $message
        ], $code);
     }
+
+    public static function successWithWarnings(array $warnings, $body) //Sucesso com avisos!
+    {
+        return response()->json([
+            'warning' => true,
+            'body' => $body,
+            'warnigs' => $warnings
+        ], 200);
+    }
 }

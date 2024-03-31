@@ -61,6 +61,12 @@ class UserController extends Controller
         $found = User::where('email', $datas)->first();
         return $found;
     }
+
+    public static function getUser($id)
+    {
+        $Property = User::where('personal_id', $id)->get();
+        return $Property;
+    }
 }
 
 

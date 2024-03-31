@@ -45,4 +45,10 @@ class NumberController extends Controller
         $found = PeopleNumber::find($datas);
         return $found;
     }
+
+    public static function getPhoneNumber($id)
+    {
+        $phoneProperty = PeopleNumber::where('personal_id', $id)->get();
+        return $phoneProperty;
+    }
 }

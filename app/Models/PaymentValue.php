@@ -14,6 +14,7 @@ class PaymentValue extends Model
     protected $fillable = [
             'contract',
             'unity_time',
-            'percentage',
+            'payment_value',
+            'percetage',
     ];
 }

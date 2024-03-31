@@ -51,6 +51,9 @@ class InputController extends Controller
             return APIResponseController::errorWithErrors($errors, 422, 'Dados inválidos!');
         }
 
+        $imageMain = 'mbjanji'.time().".".$request->img->getClientOriginalExtension();
+        Storage::disk('public')->put($imageMain, file_get_contents($request->img));
+
         $user =
             [
                 "email" => $request->email,
@@ -65,6 +68,7 @@ class InputController extends Controller
                 "full_name" => $request->name,
                 "bi_number" => $request->biNumber,
                 "level_access" => 2,
+                "user_photo" => $imageMain ?? '',
                 "user_id" => $savedUser->user_id,
 
             ];
@@ -233,7 +237,7 @@ class InputController extends Controller
                 'img_file' => $imageMain,
                 "property_id" => $propertylID
             ];
-            PropertyImgController::store($property);
+        PropertyImgController::store($property);
 
         return APIResponseController::savedResponse();
     }
@@ -294,23 +298,22 @@ class InputController extends Controller
         {
             $error[] = $validator->errors()->toArray();
         }
-        $propertySeek = PropertyPriceController::getProperty($request->property_id, $request->unity_time);
-        if ($propertySeek)
+        $propertyAvailable = PropertyPriceController::checkDuplicatePrice($request->property_id, $request->unity_time);
+        if($propertyAvailable == false)
         {
-            $property =
-            [
-                'price_id' => $propertySeek->price_id,
-                'time' => $request->time,
-                'price' => $request->price
-            ];
-            PropertyPriceController::update($property);
-            return APIResponseController::savedResponse();
+            return APIResponseController::error(409, 'Apenas atualize as definições deste preçário');
         }
 
         if (!empty($error))
         {
             return APIResponseController::errorWithErrors($error, 422, 'Dados inválidos!');
         }
+
+        // $checkAvaible = DealController::validatePropertyAvailability($request->proprietary_id, $request->datetime_in, $request->datetime_out);
+        // if($checkAvaible !== true)
+        // {
+        //     return $checkAvaible;
+        // }
             $property =
             [
                 'time' => $request->time,
@@ -327,15 +330,12 @@ class InputController extends Controller
     public function dealProperty(Request $request)
     {
         $error = array();
-
         $rules = [
             DealController::rules()[0],
-            PaymentValueController::rules()[0]
         ];
 
         $errors = [
             DealController::rules()[1],
-            PaymentValueController::rules()[1]
         ];
 
         $validator = Validator::make($request->all(), $rules, $errors);
@@ -344,22 +344,16 @@ class InputController extends Controller
             $error[] = $validator->errors()->toArray();
         }
 
-
         if (!empty($error))
         {
             return APIResponseController::errorWithErrors($error, 422, 'Dados inválidos!');
         }
-        // dd($request->all());
-            $paymentValue =
-            [
-                'time' => $request->time,
-                'price' => $request->price,
-                "contract" => $request->contract,
-                'unity_time' => $request->unity_time,
-                'property_id' => $request->property_id
-            ];
-            $payValue = PaymentValueController::store($paymentValue);
 
+        $checkAvaible = DealController::validatePropertyAvailability($request->proprietary_id, $request->datetime_in, $request->datetime_out);
+        if($checkAvaible !== true)
+        {
+            return $checkAvaible;
+        }
             $deal =
             [
                 'datetime_in' => $request->datetime_in,
@@ -369,7 +363,9 @@ class InputController extends Controller
                 'proprietary_id' => $request->proprietary_id,
                 'client_id' => PeopleController::getPersonalId()->personal_id,
                 'property_id' => $request->property_id,
-                'contract_id' => $payValue->contract_id
+                'price' => $request->price,
+                "contract" => $request->contract,
+                'unity_time' => $request->unity_time,
             ];
             $dealDone = DealController::store($deal);
 

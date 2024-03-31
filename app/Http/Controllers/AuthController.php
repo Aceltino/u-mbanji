@@ -7,6 +7,7 @@ use App\Models\User;
 
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class AuthController extends Controller
 {
@@ -41,11 +42,19 @@ class AuthController extends Controller
 
             $people = PeopleController::getPersonalId();
 
+            $img = asset('storage/' . $people->user_photo);
+            $phones = NumberController::getPhoneNumber($people->personal_id);
+            foreach($phones as $phone)
+            {
+                $phoneNumber[] = $phone->number;
+            }
             $personalData =
                 [
                     "name" => $people->full_name,
                     "level_access" => $people->level_access,
                     "personal_id" => $people->personal_id,
+                    "img" => $img ?? [],
+                    "phone" => $phoneNumber
                 ];
             return response()->json([
                 'error' => false,
