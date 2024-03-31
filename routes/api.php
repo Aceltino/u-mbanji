@@ -51,14 +51,7 @@ Route::middleware(['auth:sanctum'])->group(function()
     Route::post('/show-all-proprietary-deals', [DealController::class, 'getAllProprietaryDeal']); //Property-Show first 10 on homePage
     Route::post('/show-all-client-deals', [DealController::class, 'getAllClientDeal']); //Property-Show first 10 on homePage
     Route::post('/show-deal', [DealController::class, 'getDeal']); //Property-Show first 10 on homePage
-
-
-
-
-
 });
 
-
-//Minhas Routas(Carlos Marques)
 Route::post("/provide-mail", [EmailController::class, 'SendMail']);
 
